@@ -59,54 +59,75 @@
     </section>
 
     <section>
-      <h2>Selected Projects</h2>
+  <h2>Selected Projects</h2>
 
-      <div class="project">
-        <h3>Data-Centric AI for Seismic Interpretation (EAGE)</h3>
-        <p>
-          Studied how seismic quality and label quality influence salt boundary segmentation
-          under domain shift. Proposed evaluation-driven data selection strategies using
-          image quality metrics and latent-space analysis to improve robustness across
-          heterogeneous datasets.
-        </p>
-        <p class="muted">
-          Keywords: seismic imaging, data quality, robustness, segmentation
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>Autoencoder-Based Latent Space Filtering</h3>
-        <p>
-          Designed autoencoder models to learn compact latent representations of large-scale
-          imaging datasets. Used latent-space structure to identify outliers, noisy samples,
-          and underrepresented modes for improved training data selection.
-        </p>
-        <p class="muted">
-          Keywords: representation learning, autoencoders, data selection
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>Continual Learning for Robust Segmentation</h3>
-        <p>
-          Investigated continual and incremental learning strategies to mitigate catastrophic
-          forgetting when models are updated with new data distributions. Evaluated replay-
-          and distillation-based approaches under realistic distribution shifts.
-        </p>
-        <p class="muted">
-          Keywords: continual learning, robustness, domain shift
-        </p>
-      </div>
-
-    </section>
-
-    <footer>
-      <p class="muted">
-        © 2026 Samiha Mirza · Built with HTML & GitHub Pages
+  <!-- Project 1: Continual Learning / KD -->
+  <div class="project-row">
+    <div class="project-media">
+      <img src="assets/KD_Paper_images-Overall_architecture.jpg" alt="Knowledge distillation teacher-student framework">
+    </div>
+    <div class="project-text">
+      <h3>Continual Learning via Knowledge Distillation for Robust Segmentation</h3>
+      <p class="project-keywords">
+        Continual Learning · Knowledge Distillation · Distribution Shift
       </p>
-    </footer>
-
+      <p>
+        This work investigates continual learning strategies for semantic segmentation under realistic data evolution,
+        where models are incrementally updated with new data distributions while retaining performance on previously
+        seen domains. We focus on mitigating catastrophic forgetting in settings where full data replay is infeasible.
+      </p>
+      <p>
+        We use a teacher–student distillation framework in which a frozen prior model guides optimization of a student
+        during later stages via a weighted loss that combines supervised learning on current data with a distillation
+        objective that preserves prior behavior.
+      </p>
+      <!-- Optional links -->
+      <!-- <p class="project-links"><a href="#">Paper</a> · <a href="#">Code</a></p> -->
+    </div>
   </div>
-</body>
-</html>
 
+  <!-- Project 2: Autoencoder -->
+  <div class="project-row">
+    <div class="project-media">
+      <img src="assets/overall_pipeline.jpg" alt="Autoencoder latent space pipeline">
+    </div>
+    <div class="project-text">
+      <h3>Autoencoder-Based Latent Space Analysis for Data Selection</h3>
+      <p class="project-keywords">
+        Representation Learning · Latent Spaces · Data Quality
+      </p>
+      <p>
+        We train an autoencoder to learn compact latent embeddings that capture dominant structural and textural patterns,
+        and then use the encoder as a fixed feature extractor to project samples into a shared latent space.
+      </p>
+      <p>
+        Latent-space structure is analyzed to identify outliers and underrepresented modes. A lightweight classifier
+        (e.g., SVM) supports principled selection of informative samples for downstream segmentation, improving robustness
+        under variability.
+      </p>
+    </div>
+  </div>
+
+  <!-- Project 3: EAGE / Data selection -->
+  <div class="project-row">
+    <div class="project-media">
+      <img src="assets/frequency_based.jpg" alt="Feature learning + SVM data selection">
+    </div>
+    <div class="project-text">
+      <h3>Data-Centric Quality Assessment for Seismic Interpretation (EAGE)</h3>
+      <p class="project-keywords">
+        Data-Centric AI · Quality Metrics · Robust Generalization
+      </p>
+      <p>
+        This work studies how seismic data quality and label quality influence salt boundary segmentation under domain
+        shift. We evaluate human-defined quality metrics and model-driven representations, and analyze their relationship
+        to segmentation accuracy across datasets.
+      </p>
+      <p>
+        Quality-aware data selection is integrated into the training workflow to improve robustness when generalizing to
+        unseen domains, highlighting dataset curation as a first-class design choice in seismic interpretation pipelines.
+      </p>
+    </div>
+  </div>
+
+</section>
