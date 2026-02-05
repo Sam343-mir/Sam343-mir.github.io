@@ -64,9 +64,15 @@ footer {
   gap: 22px;
   padding: 16px 24px;
   margin: 18px 0;
-  background: #fff0f6;          /* light yellow highlight */
+  background: #fff0f6;          /* light pink highlight */
   border-radius: 10px;
 }
+
+.project-links {
+  margin-top: 8px;
+  font-size: 0.95em;
+}
+
 
 /* Fixed image column like Jon’s site */
 .project-media {
