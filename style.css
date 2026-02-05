@@ -65,7 +65,7 @@ footer {
 }
 
 .project-media {
-  flex: 0 0 120px; /* image column width */
+  flex: 0 0 50px; /* image column width */
 }
 
 .project-media img {
