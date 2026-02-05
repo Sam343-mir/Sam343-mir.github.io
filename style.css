@@ -62,7 +62,7 @@ footer {
   display: flex;
   align-items: flex-start;
   gap: 22px;
-  padding: 8px 8px;
+  padding: 16px 24px;
   margin: 18px 0;
   background: #fff9d6;          /* light yellow highlight */
   border-radius: 10px;

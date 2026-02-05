@@ -67,20 +67,16 @@
       <img src="assets/KD_Paper_images-Overall_architecture.jpg" alt="Knowledge distillation teacher-student framework">
     </div>
     <div class="project-text">
-      <h3>Continual Learning via Knowledge Distillation for Robust Segmentation</h3>
-      <p class="project-keywords">
-        Continual Learning · Knowledge Distillation · Distribution Shift
-      </p>
+      <h3>Continual Learning and Domain Adaptation via Knowledge Distillation for Robust Segmentation</h3>
       <p>
-        This work investigates continual learning strategies for semantic segmentation under realistic data evolution,
-        where models are incrementally updated with new data distributions while retaining performance on previously
-        seen domains. We focus on mitigating catastrophic forgetting in settings where full data replay is infeasible.
+        This work investigates continual learning strategies for segmentation under realistic data distribution shift,
+        where models are incrementally updated with new data distributions to mitigate catastrophic forgetting.
+       A teacher–student distillation framework is proposed where prior model guides optimization of a student
+        during later stages via a weighted loss. Ongoing work is focusing on utilizing CycleGANs to achieve domain adaptation
       </p>
-      <p>
-        We use a teacher–student distillation framework in which a frozen prior model guides optimization of a student
-        during later stages via a weighted loss that combines supervised learning on current data with a distillation
-        objective that preserves prior behavior.
-      </p>
+      <p class="project-links">
+  <a href="https://www.springerprofessional.de/en/recall-based-knowledge-distillation-for-data-distribution-based-/50272374">paper</a> ·
+</p>
       <!-- Optional links -->
       <!-- <p class="project-links"><a href="#">Paper</a> · <a href="#">Code</a></p> -->
     </div>
@@ -92,19 +88,17 @@
       <img src="assets/overall_pipeline.jpg" alt="Autoencoder latent space pipeline">
     </div>
     <div class="project-text">
-      <h3>Autoencoder-Based Latent Space Analysis for Data Selection</h3>
-      <p class="project-keywords">
-        Representation Learning · Latent Spaces · Data Quality
-      </p>
+      <h3>Autoencoder-Based Generative Latent Space Analysis for Data Selection</h3>
       <p>
-        We train an autoencoder to learn compact latent embeddings that capture dominant structural and textural patterns,
+        To achieve domain generalization while developing segmentation models, we train autoencoders to learn compact latent embeddings that capture dominant structural and textural patterns,
         and then use the encoder as a fixed feature extractor to project samples into a shared latent space.
-      </p>
-      <p>
-        Latent-space structure is analyzed to identify outliers and underrepresented modes. A lightweight classifier
+        Generative latent-space structure is analyzed to identify outliers and underrepresented modes. A lightweight classifier
         (e.g., SVM) supports principled selection of informative samples for downstream segmentation, improving robustness
         under variability.
       </p>
+      <p class="project-links">
+  <a href="">Paper</a> ·
+</p>
     </div>
   </div>
 
@@ -114,19 +108,17 @@
       <img src="assets/frequency_based.jpg" alt="Feature learning + SVM data selection">
     </div>
     <div class="project-text">
-      <h3>Data-Centric Quality Assessment for Seismic Interpretation (EAGE)</h3>
-      <p class="project-keywords">
-        Data-Centric AI · Quality Metrics · Robust Generalization
-      </p>
+      <h3>Data-Centric Quality Assessment for Robust Seismic Interpretation Models</h3>
       <p>
         This work studies how seismic data quality and label quality influence salt boundary segmentation under domain
-        shift. We evaluate human-defined quality metrics and model-driven representations, and analyze their relationship
-        to segmentation accuracy across datasets.
-      </p>
-      <p>
-        Quality-aware data selection is integrated into the training workflow to improve robustness when generalizing to
+        shift. We evaluate human-defined quality metrics and model-driven feature representations, and analyze their relationship
+        to segmentation accuracy across datasets. Quality-aware data selection is integrated into the training workflow to improve robustness when generalizing to
         unseen domains, highlighting dataset curation as a first-class design choice in seismic interpretation pipelines.
       </p>
+      <p class="project-links">
+  <a href="https://www.earthdoc.org/content/papers/10.3997/2214-4609.2025101452">Paper1</a>
+  <a href="https://www.scitepress.org/Papers/2025/131664/131664.pdf">Paper2</a>
+</p>
     </div>
   </div>
 
