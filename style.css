@@ -25,6 +25,15 @@ h1 {
 }
 
 
+a {
+  color: #c2185b;        /* muted rose */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a31545;
+  text-decoration: underline;
+}
 
 .links a {
   color: #c2185b;
@@ -72,8 +81,14 @@ footer {
 }
 
 .project-links {
+  color: #c2185b;
   margin-top: 8px;
   font-size: 0.95em;
+}
+
+.project-links:hover {
+  color: #a31545;
+  text-decoration: underline;
 }
 
 
