@@ -80,13 +80,13 @@ footer {
   border-radius: 10px;
 }
 
-.project-links {
+.project-links a{
   color: #c2185b;
   margin-top: 8px;
   font-size: 0.95em;
 }
 
-.project-links:hover {
+.project-links a:hover {
   color: #a31545;
   text-decoration: underline;
 }
