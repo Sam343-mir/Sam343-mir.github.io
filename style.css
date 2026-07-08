@@ -94,7 +94,7 @@ footer {
 
 /* Fixed image column like Jon’s site */
 .project-media {
-  flex: 0 0 170px;              /* image column width */
+  flex: 0 0 190px;              /* image column width */
 }
 
 .project-media img {
